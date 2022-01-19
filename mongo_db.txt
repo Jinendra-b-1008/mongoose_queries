@@ -1,0 +1,16 @@
+1.db.employee.insertMany([{"emp_name":"Raju","emp_address":"Hubali","email_id":"raju@gmail.com","phone_no":6520202020,"DOB":"1999/05/25","gender":"male","department":"BE","city":"Hubali"},{"emp_name":"Ramesh","emp_address":"Dharawad","email_id":"ramesh@gmail.com","phone_no":8881924125,"DOB":"1996/05/25","gender":"male","department":"MCA","city":"Mubmai"},{"emp_name":"Ravi","emp_address":"Belagavi","email_id":"ravi@gmail.com","phone_no":7263827171,"DOB":"1999/02/14","gender":"male","department":"MCA","city":"Pune"},{"emp_name":"Guru","emp_address":"Hubali","email_id":"guru@yahoo.com","phone_no":9223223241,"DOB":"2005/02/14","gender":"male","department":"CS","city":"Hubali"},{"emp_name":"Mahesh","emp_address":"Belagavi","email_id":"mahesh@gmail.com","phone_no":7406470682,"DOB":"2001/07/06","gender":"male","department":"MCA","city":"Hubali"},{"emp_name":"Reema","emp_address":"Gadag","email_id":"reema@yahoo.com","phone_no":7635232844,"DOB":"2004/02/14","gender":"female","department":"CS","city":"Dharawad"},{"emp		  _name":"Kalagouda","emp_address":"Belagavi","email_id":"kallu@gmail.com","phone_no":9823237634,"DOB":"1998/06/14","gender":"male","department":"MCA","city":"Belagavi"},{"emp_name":"Mallu","emp_address":"Bijapur","email_id":"mallu@gmail.com","phone_no":7263827171,"DOB":"1999/02/14","gender":"male","department":"MCA","city":"Hubali"},{"emp_name":"Manju","emp_address":"Belagavi","email_id":"manju@gmail.com","phone_no":8212934747,"DOB":"1997/08/27","gender":"male","department":"MCA","city":"Belagavi"}])
+
+
+2.db.employee.find({"gender":"male"})
+
+3.db.employee.find({"department":MCA})
+
+4.db.employee.find({"DOB":$gt:{2000/01/01}})
+
+5.db.employee.find({"email_id":$"/@yahoo/i"})
+
+6.db.employee.find({"emp_name":/M/})
+
+7.db.employee.update({"emp_name":"Mallu"},{$set:{"email_id":"mdg@gmail.com"}})
+
+
